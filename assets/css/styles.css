@@ -354,11 +354,49 @@ footer{
     margin-top: -7rem;
     width: 20.5rem;
   }
-  
 
+  /*reduce the sizes of the icons (skill section)*/
+  .icon{
+    width: 5.875rem;
+    height: 5.25rem;
+  }
 
+  /*Projects Section Responsive*/
 
+  .projects-container{
+    flex-direction: column;
+  }
 
+  .project-container{
+    width: 20.875rem;
+  }
+
+  /*Make the Contact Form Responsive*/
+
+  .contact-form-container{
+    max-width: 23.75rem;
+  }
+
+  /*Make the Website Responsive on Small Phones*/
+
+  @media screen and (max-width: 420px) {
+    .hero img{
+      height: 37.5rem;
+      width: 23rem;
+    }
+
+    .bio{
+      width: 18.3rem;
+    }
+
+    .project-container{
+      width: 17.875rem;
+    }
+
+    .contact-form-container{
+      max-width: 17.75rem;
+    }
+  }
 }
 
 
