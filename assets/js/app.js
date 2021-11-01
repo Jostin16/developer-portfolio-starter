@@ -31,4 +31,4 @@ navLink.forEach((link) =>{
     });
 });
 
-/*How to Make the Hero Section Responsive*/
+

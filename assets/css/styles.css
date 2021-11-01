@@ -335,10 +335,32 @@ footer{
   }
 
   nav ul.show{
-    transform: translateX(0);
+    transform: translateX(0); /*show it just in the middle*/
   }
 
+  /*Hero Section Responsive*/
+  .hero{
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero img{
+    height: 37.5rem; /*100vh*/
+    width: 30rem;
+  }
+
+  .bio{
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+  
+
+
+
+
 }
+
 
 
 /*https://formspree.io/f/mvodjgbz*/
