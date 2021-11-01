@@ -58,3 +58,7 @@ In addition to formspree, you can also use Netlify form submission in case you d
 - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
 - [Awesome README](https://github.com/matiassingers/awesome-readme)
 - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+## Netlify
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/52619e17-fa0e-4db7-914d-f7e16ec6fa58/deploy-status)](https://app.netlify.com/sites/jostinmartinez/deploys)
