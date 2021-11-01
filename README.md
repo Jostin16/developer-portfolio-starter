@@ -8,7 +8,7 @@ A portfolio website template for campers
 
 [@Jostin52473522](https://www.twitter.com/Jostin52473522)
 
-## Thanks to for the tutorial in FCC
+## Thanks for the tutorial in FCC
 
 [@koladechris](https://www.twitter.com/koladechris)
 
