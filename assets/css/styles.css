@@ -245,6 +245,7 @@ nav ul li{
 .contact-form-container textarea{
   min-height: 6.25rem;
   font-size: 14px;
+  resize:none;
 }
 
 .contact-form-container .input-field{
