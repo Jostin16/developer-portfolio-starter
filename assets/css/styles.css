@@ -307,5 +307,38 @@ footer{
   height: 3rem;
 }
 
+/*MAKE THE PORTFOLIO RESPONSIVE*/
+
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  nav ul{
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%); /*push it to the right and fource it out of the viewport*/
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li{
+    margin: 8px;
+  }
+
+  .burger-menu{
+    display: block; /**now. we can show the hamburger*/
+  }
+
+  nav ul.show{
+    transform: translateX(0);
+  }
+
+}
+
 
 /*https://formspree.io/f/mvodjgbz*/
