@@ -28,6 +28,16 @@ html {
   /* border: 2px solid red; */
 }
 
+/*------------SWITCH*/
+body{
+  transition: .3s ease all;
+}
+
+body.dark{
+  background: #363944;
+}
+/*-------------SWITCH*/
+
 ul {
   list-style-type: none;
 }
@@ -58,6 +68,22 @@ nav{
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
+
+
+/*------------SWITCH*/
+body.dark nav{
+  background: #363944;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+body.dark nav a{
+  color: white;
+}
+
+body.dark nav a:hover{
+  color: var(--secondary-color);
+}
+/*------------SWITCH*/
 
 nav h1{
   color: var(--primary-color);
@@ -116,7 +142,7 @@ nav ul li{
   box-shadow: 0 2px 15px 2px var(--primary-shadow);
 }
 
--bio h1{
+.bio h1{
   margin-bottom: var(--bottom-margin);  
 }
 
@@ -128,6 +154,17 @@ nav ul li{
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+
+/*-------------SWITCH */
+body.dark .bio-title{
+  color: var(--primary-color);
+}
+
+
+body.dark .bio-text{
+  color: white;
+}
+/*-------------SWITCH */
 
 /*skills section*/
 .skills{
@@ -142,7 +179,15 @@ nav ul li{
 
 .skill-header{
   margin-bottom: 1rem; /*distance beetwen My top skills and the 6 images*/
+  font-size: 1.875rem;
 }
+
+
+/*-------------SWITCH */
+body.dark .skill-header{
+  color: var(--primary-color);
+}
+/*-------------SWITCH */
 
 .skills-wrapper img{
   padding: 1.25rem;
@@ -173,6 +218,12 @@ nav ul li{
   margin-bottom: 90px;
 }
 
+/*------------SWITCH*/
+body.dark .projects{
+  background: #363944;
+}
+/*------------SWITCH*/
+
 .project-pic{
   width: 65%;
   height: 60%;
@@ -187,7 +238,14 @@ nav ul li{
 .projects-title{
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.875rem;
 }
+
+/*------------SWITCH*/
+body.dark .projects-title{
+  color: var(--primary-color);
+}
+/*------------SWITCH*/
 
 .project-container{
   text-align: center;
@@ -227,7 +285,14 @@ nav ul li{
 .contact h2{
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  font-size: 1.875rem;
 }
+
+/*------------SWITCH*/
+body.dark .contact h2{
+  color: var(--primary-color);
+}
+/*------------SWITCH*/
 
 .contact-form-container{
   max-width: 40.75rem;
@@ -236,6 +301,12 @@ nav ul li{
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
+
+/*------------SWITCH*/
+body.dark .contact-form-container{
+  box-shadow: 0 3px 10px var(--bg-color);
+}
+/*------------SWITCH*/
 
 .contact-form-container label{
   line-height: 2.7rem;
@@ -306,6 +377,21 @@ footer{
   margin: 2rem 0 0;
 }
 
+/*------------SWITCH*/
+body.dark footer{
+  background: #363944;
+}
+
+body.dark .built{
+  color: white;
+}
+
+body.dark .by{
+  color: white;
+}
+/*------------SWITCH*/
+
+
 /* SROLL TO TOP BUTTON */
 .scroll-up{
   position: fixed;
@@ -313,6 +399,7 @@ footer{
   bottom: 3%;
   cursor: pointer;
 }
+
 .up-arrow{
   width: 3rem;
   height: 3rem;
@@ -349,6 +436,21 @@ footer{
     transform: translateX(0); /*show it just in the middle*/
   }
 
+  /*------------SWITCH*/
+  body.dark nav ul.show{
+    background: #363944;
+    box-shadow: 0 2px 15px 2px var(--primary-shadow);
+  }
+
+  body.dark nav a{
+    color: white;
+  }
+
+  body.dark nav a:hover{
+    color: var(--secondary-color);
+  }
+  /*------------SWITCH*/
+
   /*Hero Section Responsive*/
   .hero{
     margin-top: -4rem;
@@ -358,7 +460,7 @@ footer{
   }
 
   .hero img{
-    height: 37.5rem; /*100vh*/
+    height: 29rem;
     width: 30rem;
   }
 
@@ -404,12 +506,14 @@ footer{
 
   @media screen and (max-width: 420px) {
     .hero img{
-      height: 37.5rem;
+      height: 27rem;
       width: 23rem;
+      margin-top: 75px;
+      margin-bottom: 0;
     }
 
     .bio{
-      width: 18.3rem;
+      width: 19rem;
     }
 
     .project-container{
@@ -423,5 +527,48 @@ footer{
 }
 
 
+/*SWITCH SUN-MOON*/
+.switch{
+  background: #343D5B;
+  border-radius: 62.5rem;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
 
-/*https://formspree.io/f/mvodjgbz*/
+.switch span{
+  width: 1.875rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  display: block;
+  background: none;
+  color: white;
+  text-align: center;
+}
+
+.switch::after{
+  content: "";
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  position: absolute; /*posicion del circulo que se moverá*/
+  background:white;
+  top: 0;
+  left: 0; /*botón a la izquierda*/
+  right: unset; /*puede estar en left y right en 0, depende de que lado queremos que inicie el botón a moverse*/
+  border-radius: 6.25rem;
+  transition: .3s ease all;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active{
+  background: orange;
+  color: black;
+}
+
+.switch.active::after{
+  right: 0;
+  left: unset;
+}
